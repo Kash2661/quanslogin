@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quans Login</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: url('https://images.pexels.com/photos/2008145/pexels-photo-2008145.jpeg') no-repeat center center fixed;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+           
+        }
+
+        #login-container {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 5%;
+            border-radius: 20px;
+            text-align: center;
+            max-width: 300px; /* Set a maximum width for the container */
+            width: 100%; /* Make the container responsive */
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 20px 0;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top:20px
+        }
+    </style>
+</head>
+
+<body>
+    <div id="login-container">
+        <h1>Quans</h1>
+        
+
+            <hr>
+
+            <!-- For login -->
+            <label for="username">Username:</label> 
+            <input type="text" id="username" name="username" required>
+           
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="button" onclick="login()">Login</button>
+
+
+         <form>
+                <!-- For username creation -->
+    
+                <button type="button" onclick="createAccount()">Create Account</button>
+        </form>
+    </div>
+
+    <script>
+        function createAccount() {
+            // Handle the creation of a new account
+            alert("Account created successfully!");
+        }
+
+        function login() {
+            // Handle the login functionality
+            alert("Welcome to Quans!");
+        }
+    </script>
+</body>
+
+</html>
